@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TensorFlow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBY_Lifestyle5" translatesAutoresizingMaskIntoConstraints="NO" id="wmU-4I-brd">
+                                <rect key="frame" x="-47" y="0.0" width="506" height="906"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="تعرفي على اكثر من ١٠٠ نوع من الورود " textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UoB-Jw-1QF">
+                                <rect key="frame" x="84" y="416" width="224" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="textColor" red="0.1481995558375635" green="0.1481995558375635" blue="0.1481995558375635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyI-YG-Mxo">
+                                <rect key="frame" x="86" y="523" width="130" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50867260449999996" blue="0.66376114919999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="اختاري صورة">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PickImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TGf-hV-FCw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgU-0g-bwJ">
+                                <rect key="frame" x="196" y="316" width="156" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="56"/>
+                                <color key="textColor" red="1" green="0.50867260453131458" blue="0.66376114917280848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Npa-Se-yST">
+                                <rect key="frame" x="27" y="166" width="360" height="574"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PMc-Gg-r04">
+                                        <rect key="frame" x="37" y="67" width="286" height="446"/>
+                                    </imageView>
+                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="ورد" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc0-D1-tyj">
+                                        <rect key="frame" x="37" y="406" width="206" height="107"/>
+                                        <color key="backgroundColor" red="1" green="0.50867260449999996" blue="0.66376114919999996" alpha="0.88736087328767121" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="107" id="X42-5H-6Hg"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="PMc-Gg-r04" firstAttribute="centerX" secondItem="Npa-Se-yST" secondAttribute="centerX" id="3ty-1G-dJY"/>
+                                    <constraint firstAttribute="bottom" secondItem="PMc-Gg-r04" secondAttribute="bottom" constant="61" id="Fch-vM-W1O"/>
+                                    <constraint firstItem="Uc0-D1-tyj" firstAttribute="bottom" secondItem="PMc-Gg-r04" secondAttribute="bottom" id="Fks-aA-Et8"/>
+                                    <constraint firstItem="PMc-Gg-r04" firstAttribute="leading" secondItem="Npa-Se-yST" secondAttribute="leading" constant="37" id="UDt-nV-STC"/>
+                                    <constraint firstItem="Uc0-D1-tyj" firstAttribute="leading" secondItem="PMc-Gg-r04" secondAttribute="leading" id="WHP-SP-R0g"/>
+                                    <constraint firstItem="Uc0-D1-tyj" firstAttribute="centerX" secondItem="Npa-Se-yST" secondAttribute="centerX" constant="-40" id="l3A-Bl-tpg"/>
+                                    <constraint firstItem="PMc-Gg-r04" firstAttribute="top" secondItem="Npa-Se-yST" secondAttribute="top" constant="67" id="xjJ-BU-ME1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wmU-4I-brd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6ei-5k-wmt"/>
+                            <constraint firstItem="Npa-Se-yST" firstAttribute="centerY" secondItem="wmU-4I-brd" secondAttribute="centerY" id="FKI-Fk-NLn"/>
+                            <constraint firstItem="Npa-Se-yST" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="JX9-EZ-Jrw"/>
+                            <constraint firstItem="Npa-Se-yST" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KW9-bX-XxW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wmU-4I-brd" secondAttribute="trailing" constant="-65" id="SXe-se-bDz"/>
+                            <constraint firstItem="Npa-Se-yST" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="122" id="aTp-M6-mLA"/>
+                            <constraint firstItem="wmU-4I-brd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-67" id="jqt-aV-vsw"/>
+                            <constraint firstItem="Npa-Se-yST" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="y6d-zQ-5kd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="flowerLabel" destination="Uc0-D1-tyj" id="MmZ-70-qcV"/>
+                        <outlet property="imageBG" destination="Npa-Se-yST" id="lU0-yC-O5X"/>
+                        <outlet property="imageView" destination="PMc-Gg-r04" id="r9w-oL-Vr1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FBY_Lifestyle5" width="1746" height="2500"/>
+    </resources>
+</document>
